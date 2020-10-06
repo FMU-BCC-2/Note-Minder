@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="574.0" prefWidth="858.0" style="-fx-background-color: #D6DCE5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testee.ConfigController">
+   <children>
+      <Pane layoutX="8.0" layoutY="6.0" prefHeight="585.0" prefWidth="261.0" style="-fx-background-color: #154c66;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="setnotas" layoutX="79.0" layoutY="178.0" mnemonicParsing="false" onAction="#setnotas" text="Notas" />
+            <Button fx:id="setagenda" layoutX="79.0" layoutY="232.0" mnemonicParsing="false" onAction="#setagenda" text="Agenda" />
+            <Button fx:id="setconfig" layoutX="79.0" layoutY="287.0" mnemonicParsing="false" onAction="#setconfig" text="Configurações" />
+            <Button fx:id="home" layoutX="77.0" layoutY="129.0" mnemonicParsing="false" onAction="#home" text="home" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
