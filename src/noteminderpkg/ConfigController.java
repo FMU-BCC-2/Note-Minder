@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package testee;
+package noteminderpkg;
 
 import java.io.IOException;
 import java.net.URL;
@@ -23,19 +23,22 @@ import javafx.stage.Stage;
  *
  * @author yaraz
  */
-public class AgendaController implements Initializable {
+public class ConfigController implements Initializable {
 
-    @FXML private Button btnagenda;
+    @FXML private ResourceBundle resources;
 
-    @FXML private Button btnnotas;
+    @FXML private URL location;
 
-    @FXML private Button btnconfig;
+    @FXML private Button setconfig;
+
+    @FXML private Button setnotas;
+
+    @FXML private Button setagenda;
     
     @FXML private Button home;
-    
 
     @FXML
-    void btnnotas(ActionEvent event) throws IOException {
+    void setnotas(ActionEvent event) throws IOException {
            Parent outra = FXMLLoader.load(getClass().getResource("Notas.fxml"));
            Scene outraa= new Scene(outra);
            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -44,8 +47,8 @@ public class AgendaController implements Initializable {
     }
 
     @FXML
-    void btnagenda(ActionEvent event) throws IOException {
-           Parent outra = FXMLLoader.load(getClass().getResource("Agenda.fxml"));
+    void setagenda(ActionEvent event) throws IOException {
+        Parent outra = FXMLLoader.load(getClass().getResource("Agenda.fxml"));
            Scene outraa= new Scene(outra);
            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
            window.setScene(outraa);
@@ -53,8 +56,8 @@ public class AgendaController implements Initializable {
     }
 
     @FXML
-    void btnconfig(ActionEvent event) throws IOException {
-           Parent outra = FXMLLoader.load(getClass().getResource("Config.fxml"));
+    void setconfig(ActionEvent event) throws IOException {
+        Parent outra = FXMLLoader.load(getClass().getResource("Config.fxml"));
            Scene outraa= new Scene(outra);
            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
            window.setScene(outraa);
