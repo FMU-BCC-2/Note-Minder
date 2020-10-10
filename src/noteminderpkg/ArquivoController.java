@@ -23,12 +23,7 @@ import javafx.stage.Stage;
  *
  * @author yaraz
  */
-public class ConfigController implements Initializable {
-
-    @FXML private ResourceBundle resources;
-
-    @FXML private URL location;
-
+public class ArquivoController implements Initializable {
     @FXML private Button setconfig;
 
     @FXML private Button setnotas;
@@ -37,9 +32,8 @@ public class ConfigController implements Initializable {
     
     @FXML private Button home;
 
-    @FXML
-    void setnotas(ActionEvent event) throws IOException {
-           Parent outra = FXMLLoader.load(getClass().getResource("Notas.fxml"));
+    @FXML void setnotas(ActionEvent event) throws IOException {
+        Parent outra = FXMLLoader.load(getClass().getResource("Notas.fxml"));
            Scene outraa= new Scene(outra);
            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
            window.setScene(outraa);
@@ -66,12 +60,13 @@ public class ConfigController implements Initializable {
     
     @FXML
     void sethome(ActionEvent event) throws IOException {
-           Parent outra = FXMLLoader.load(getClass().getResource("FXMLDocumentController.fxml"));
+        Parent outra = FXMLLoader.load(getClass().getResource("FXMLDocumentController.fxml"));
            Scene outraa= new Scene(outra);
            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
            window.setScene(outraa);
            window.show();
     }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

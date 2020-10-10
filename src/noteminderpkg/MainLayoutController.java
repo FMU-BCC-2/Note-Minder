@@ -26,7 +26,7 @@ import javafx.stage.Stage;
  *
  * @author yaraz
  */
-public class FXMLDocumentController implements Initializable {
+public class MainLayoutController implements Initializable {
     
      @FXML private Button button13;
 
