@@ -10,44 +10,41 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="574.0" prefWidth="838.0" style="-fx-background-color: #D6DCE5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="noteminderpkg.FXMLDocumentController">
-    <children>
-      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="261.0" style="-fx-background-color: #154c66;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <AnchorPane />
-      <Button fx:id="button1" layoutX="2.0" layoutY="168.0" onAction="#TelaNotas" prefHeight="36.0" prefWidth="253.0" style="-fx-background-color: #154c66;" text="Notas" textAlignment="CENTER" textFill="SILVER" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="168.0">
-         <font>
-            <Font name="Rockwell Bold" size="15.0" />
-         </font>
-      </Button>
-      <Button fx:id="button11" layoutX="1.0" layoutY="220.0" onAction="#TelaAgenda" prefHeight="36.0" prefWidth="253.0" style="-fx-background-color: #154c66;" text="Agenda" textAlignment="CENTER" textFill="SILVER" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="220.0">
-         <font>
-            <Font name="Rockwell" size="15.0" />
-         </font>
-      </Button>
-      <Button fx:id="button13" layoutX="1.0" layoutY="272.0" onAction="#TelaConfiguracoes" prefHeight="36.0" prefWidth="253.0" style="-fx-background-color: #154c66;" text="Configurações" textAlignment="CENTER" textFill="SILVER" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="272.0">
-         <font>
-            <Font name="Rockwell" size="15.0" />
-         </font>
-      </Button>
-      <GridPane alignment="CENTER" layoutX="312.0" layoutY="59.0" prefHeight="462.0" prefWidth="453.0" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="312.0" AnchorPane.rightAnchor="79.0" AnchorPane.topAnchor="59.0">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
-         <children>
-            <TextArea prefHeight="200.0" prefWidth="200.0" promptText="Nota 1" style="-fx-background-color: #1C1C1C;" text="Nota 1" />
-            <TextArea prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4682B4;" text="Nota 2" GridPane.columnIndex="1" />
-            <TextArea prefHeight="200.0" prefWidth="200.0" text="Nota 3" GridPane.rowIndex="1" />
-            <TextArea prefHeight="200.0" prefWidth="200.0" text="Nota 4" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextArea prefHeight="200.0" prefWidth="200.0" text="Nota 5" GridPane.rowIndex="2" />
-            <TextArea prefHeight="200.0" prefWidth="200.0" text="Nota 6" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-         </children>
-      </GridPane>
-      <ToggleButton layoutX="749.0" layoutY="8.0" mnemonicParsing="false" text="Modo Noturno" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
-    </children>
+
+<AnchorPane fx:id="AnchorPane_MainWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane fx:id="SplitPane_VWindow" dividerPositions="0.5" orientation="VERTICAL" prefHeight="768.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane fx:id="AnchorPane_Top" maxHeight="50.0" prefHeight="236.0" prefWidth="1022.0" />
+          <AnchorPane fx:id="AnchorPaneMiddle" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane fx:id="SplitPane_HWindow" dividerPositions="0.29797979797979796" prefHeight="710.0" prefWidth="1022.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane fx:id="AnchorPane_Left" maxWidth="256.0" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                      <AnchorPane fx:id="AnchorPane_Right" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <ScrollPane fx:id="ScrollPane_Notes" prefHeight="708.0" prefWidth="758.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <content>
+                                    <GridPane fx:id="GridPane_Notes">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                    </GridPane>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
 </AnchorPane>
