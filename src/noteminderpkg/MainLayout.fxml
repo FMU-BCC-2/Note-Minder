@@ -14,13 +14,13 @@
    <children>
       <SplitPane fx:id="SplitPane_VWindow" dividerPositions="0.5" minHeight="50.0" minWidth="256.0" orientation="VERTICAL" prefHeight="768.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
-          <AnchorPane fx:id="AnchorPane_Top" maxHeight="50.0" minWidth="50.0" prefHeight="50.0" prefWidth="1022.0" />
+          <AnchorPane fx:id="AnchorPane_Top" maxHeight="50.0" minWidth="50.0" prefHeight="50.0" prefWidth="1022.0" style="-fx-background-color: #D5DCE6;" />
           <AnchorPane fx:id="AnchorPaneMiddle" minHeight="0.0" minWidth="256.0">
                <children>
                   <SplitPane fx:id="SplitPane_HWindow" dividerPositions="0.29797979797979796" minHeight="50.0" minWidth="256.0" prefHeight="710.0" prefWidth="1022.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <items>
-                      <AnchorPane fx:id="AnchorPane_Left" maxWidth="256.0" minHeight="0.0" minWidth="256.0" prefHeight="160.0" prefWidth="256.0" />
-                      <AnchorPane fx:id="AnchorPane_Right" minHeight="0.0" minWidth="0.0">
+                      <AnchorPane fx:id="AnchorPane_Left" maxWidth="256.0" minHeight="0.0" minWidth="256.0" prefHeight="160.0" prefWidth="256.0" style="-fx-background-color: #154D66;" />
+                      <AnchorPane fx:id="AnchorPane_Right" minHeight="0.0" minWidth="0.0" stylesheets="@../css/MainLayout.css">
                            <children>
                               <ScrollPane fx:id="ScrollPane_Notes" prefHeight="708.0" prefWidth="758.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <content>
