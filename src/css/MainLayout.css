@@ -1,0 +1,11 @@
+.scroll-pane {
+   -fx-background: transparent;
+   -fx-border-color: transparent;
+   -fx-background-image: url("../img/bg/2.jpg");
+}
+
+.text-area .content {
+    -fx-background-image: url("../img/bg/note-yellow.jpg");
+    -fx-border-color: #000000;
+}
+
