@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.media.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
@@ -15,12 +16,152 @@
    <children>
       <SplitPane fx:id="SplitPane_VWindow" dividerPositions="0.5" minHeight="50.0" minWidth="256.0" orientation="VERTICAL" prefHeight="768.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
-          <AnchorPane fx:id="AnchorPane_Top" maxHeight="50.0" minWidth="50.0" prefHeight="50.0" prefWidth="1022.0" style="-fx-background-color: #D5DCE6;" />
+          <AnchorPane fx:id="AnchorPane_Top" maxHeight="0.0" minHeight="50.0" prefHeight="50.0" style="-fx-background-color: #D5DCE6;">
+               <children>
+                  <HBox fx:id="HBox_Logo" layoutX="14.0" layoutY="8.0" prefHeight="50.0" prefWidth="1022.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Note Minder" textAlignment="CENTER" wrappingWidth="188.623046875">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="HBox_Top" alignment="CENTER_RIGHT" layoutX="259.0" layoutY="-15.0" prefHeight="43.0" prefWidth="1022.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icon/icons8_synchronize_64px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icon/icons8_edit_image_64px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icon/icons8_cat_profile_64px_2.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="60.0" right="10.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="1022.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <TextField alignment="CENTER" prefWidth="350.0" promptText="Procurar notas">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Button mnemonicParsing="false" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icon/icons8_add_64px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children></AnchorPane>
           <AnchorPane fx:id="AnchorPaneMiddle" minHeight="0.0" minWidth="256.0">
                <children>
                   <SplitPane fx:id="SplitPane_HWindow" dividerPositions="0.29797979797979796" minHeight="50.0" minWidth="256.0" prefHeight="710.0" prefWidth="1022.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <items>
-                      <AnchorPane fx:id="AnchorPane_Left" maxWidth="256.0" minHeight="0.0" minWidth="256.0" prefHeight="160.0" prefWidth="256.0" style="-fx-background-color: #154D66;" />
+                      <AnchorPane fx:id="AnchorPane_Left" maxWidth="256.0" minHeight="0.0" minWidth="256.0" prefHeight="160.0" prefWidth="256.0" style="-fx-background-color: #154D66;">
+                           <children>
+                              <VBox fx:id="VBox_LeftButtons" alignment="CENTER" layoutY="213.0" prefHeight="326.0" prefWidth="256.0" spacing="20.0">
+                                 <children>
+                                    <Button alignment="TOP_LEFT" mnemonicParsing="false" prefWidth="200.0" style="-fx-background-color: #144860;" text="Notas" textFill="#bbbbbb">
+                                       <graphic>
+                                          <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/icon/icons8_inscription_64px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin></Button>
+                                    <Button alignment="TOP_LEFT" mnemonicParsing="false" prefWidth="200.0" style="-fx-background-color: #144860;" text="Agenda" textFill="#bbbbbb">
+                                       <graphic>
+                                          <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/icon/icons8_google_calendar_64px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic></Button>
+                                    <Button alignment="TOP_LEFT" mnemonicParsing="false" prefWidth="200.0" style="-fx-background-color: #144860;" text="Arquivo" textFill="#bbbbbb">
+                                       <graphic>
+                                          <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/icon/icons8_archive_folder_64px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic></Button>
+                                    <Button alignment="TOP_LEFT" mnemonicParsing="false" prefWidth="200.0" style="-fx-background-color: #144860;" text="Sobre" textFill="#bbbbbb">
+                                       <graphic>
+                                          <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/icon/icons8_info_64px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic></Button>
+                                 </children>
+                              </VBox>
+                              <Accordion layoutX="27.0" layoutY="46.0" maxHeight="150.0">
+                                <panes>
+                                  <TitledPane text="untitled 1">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Button layoutY="154.0" mnemonicParsing="false" text="Button" />
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </TitledPane>
+                                  <TitledPane animated="false" text="Teste">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                    </content>
+                                  </TitledPane>
+                                  <TitledPane animated="false" text="untitled 3">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                    </content>
+                                  </TitledPane>
+                                </panes>
+                              </Accordion>
+                              <Text fill="WHITE" layoutX="92.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etiquetas">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Text>
+                           </children></AnchorPane>
                       <AnchorPane fx:id="AnchorPane_Right" minHeight="0.0" minWidth="0.0" stylesheets="@../css/MainLayout.css">
                            <children>
                               <ScrollPane fx:id="ScrollPane_Notes" prefHeight="708.0" prefWidth="758.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
